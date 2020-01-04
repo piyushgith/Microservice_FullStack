@@ -1,0 +1,86 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" [routerLink]="['/home']">
+                <strong>Vodafone</strong>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <button class="btn btn-primary navbar-btn navbar-right" [routerLink]="['/login']">Logout</button>
+        </div>
+    </div>
+</nav>
+<div class="row" style="margin-top: 80px;">
+    <div class="container">
+        <div class="panel-default" style="padding-top: 40px;">
+            <div class="panel-body">
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body" align="center">
+                            <a [routerLink]="['/profile']">
+                                <i class="fa fa-user fa-big"></i>
+                            </a>
+                        </div>
+                        <div class="panel-footer info" align="center">
+                            <a [routerLink]="['/profile']">
+                                <h4>View Profile</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body" align="center">
+                            <a [routerLink]="['/add-friend']">
+                                <i class="fa fa-user-plus fa-big"></i>
+                            </a>
+                        </div>
+                        <div class="panel-footer info" align="center">
+                            <a [routerLink]="['/add-friend']">
+                                <h4>Add Friends</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body" align="center">
+                            <a [routerLink]="['/call-details']">
+                                <i class="fa fa-phone fa-big"></i>
+                            </a>
+                        </div>
+                        <div class="panel-footer info" align="center">
+                            <a [routerLink]="['/call-details']">
+                                <h4>Call Details</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body" align="center">
+                            <a [routerLink]="['/view-plan']">
+                                <i class="fa fa-list fa-big"></i>
+                            </a>
+                        </div>
+                        <div class="panel-footer info" align="center">
+                            <a [routerLink]="['/view-plan']">
+                                <h4>View Plans</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

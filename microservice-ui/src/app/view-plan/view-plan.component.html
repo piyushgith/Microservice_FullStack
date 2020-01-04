@@ -1,0 +1,58 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" [routerLink]="['/home']">
+                <strong>Vodafone</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/profile']">View Profile</a></li>
+                <li><a [routerLink]="['/add-friend']">Add Friends</a></li>
+                <li><a [routerLink]="['/call-details']">Call Details</a></li>
+                <li><a [routerLink]="['/view-plan']">View Plans</a></li>
+            </ul>
+            <button class="btn btn-primary navbar-btn navbar-right" [routerLink]="['/login']">Log Out</button>
+        </div>
+    </div>
+</nav>
+<div class="row" style="margin-top: 50px;">
+    <div class="col-sm-2"></div>
+    <div class="container col-sm-8">
+        <div class="panel panel-default">
+            <div align="center" class="panel-heading">
+                <h3>View Plan</h3>
+            </div>
+            <div class="panel-body" *ngIf="planDetails && !errorMsg">
+                <div class="table table-responsive">
+                    <table class="table table-striped table-hover">
+                        <tr>
+                            <th>Plan Id</th>
+                            <th>Plan Name</th>
+                            <th>National Rate</th>
+                            <th>Local Rate</th>
+                        </tr>
+                        <tr *ngFor="let plan of planDetails">
+                            <td>{{plan.planId}}</td>
+                            <td>{{plan.planName}}</td>
+                            <td>{{plan.nationalRate}}</td>
+                            <td>{{plan.localRate}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="btn btn-primary" [routerLink]="['/home']">Back</button><br><br>
+                </div>
+            </div>
+            <div class="panel-body" *ngIf="errorMsg">
+                <div class="red">{{errorMsg}}</div><br>
+                <button class="btn btn-primary" [routerLink]="['/home']">Back</button><br><br>
+            </div>
+        </div>
+    </div>
+</div>

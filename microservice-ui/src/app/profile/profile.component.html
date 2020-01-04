@@ -1,0 +1,101 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+  
+        <a class="navbar-brand" [routerLink]="['/home']">
+          <strong>Vodafone</strong>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['/profile']">View Profile</a></li>
+          <li><a [routerLink]="['/add-friend']">Add Friends</a></li>
+          <li><a [routerLink]="['/call-details']">Call Details</a></li> 
+          <li><a [routerLink]="['/view-plan']">View Plans</a></li> 
+        </ul>
+        <button class="btn btn-primary navbar-btn navbar-right" [routerLink]="['/login']">Logout</button>
+      </div>
+    </div>
+  </nav>
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-sm-3"></div>
+    <div class="container col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 align="center">View Profile</h3>
+        </div>
+        <div class="panel-body" *ngIf="profileDetail && !friendAndFamilyErrorMsg && !errorMsg">
+          <div class="col-sm-offset-1 col-sm-10">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <tr>
+                  <th>Phone No</th>
+                  <td>{{profileDetail.phoneNo}}</td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td>{{profileDetail.age}}</td>
+                </tr>
+                <tr>
+                  <th>Gender</th>
+                  <td>{{profileDetail.gender}}</td>
+                </tr>
+                <tr>
+                  <th>Address</th>
+                  <td>{{profileDetail.address}}</td>
+                </tr>
+                <tr>
+                  <th>Friends and Family</th>
+                  <td>
+                    <div *ngFor="let data of profileDetail.friendAndFamily">{{data}}</div>
+                  </td>
+                </tr>
+              </table>
+              <br><br>
+              <table class="table table-striped">
+                <tr>
+                  <th colspan="3" style="text-align: center">Current Plan</th>
+                </tr>
+                <tr class="">
+                  <th>Plan Id</th>
+                  <td>{{profileDetail.currentPlan.planId}}</td>
+                </tr>
+                <tr>
+                  <th>Plan Name</th>
+                  <td>{{profileDetail.currentPlan.planName}}</td>
+                </tr>
+                <tr>
+                  <th>National Rate</th>
+                  <td>{{profileDetail.currentPlan.nationalRate}}</td>
+                </tr>
+                <tr>
+                  <th>Local Rate</th>
+                  <td>{{profileDetail.currentPlan.localRate}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br>
+          <div class="col-sm-offset-1">
+            <button class="btn btn-primary" style="margin-left:5px;" [routerLink]="['/home']">Back</button>
+          </div>
+        </div>
+        <br><br>
+        <div class="panel-body" *ngIf="friendAndFamilyErrorMsg">
+          <div class="red">{{friendAndFamilyErrorMsg}}</div><br>
+          <button class="btn btn-primary" style="margin-left:5px;" [routerLink]="['/home']">Back</button>
+        </div>
+        <div class="panel-body" *ngIf="errorMsg">
+          <div class="red">{{errorMsg}}</div><br>
+          <button class="btn btn-primary" style="margin-left:5px;" [routerLink]="['/home']">Back</button>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <br><br><br>

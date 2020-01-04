@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" [routerLink]="['/home']">
+                <strong class="navbarHeader">Vodafone</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/profile']">View Profile</a></li>
+                <li><a [routerLink]="['/add-friend']">Add Friends</a></li>
+                <li><a [routerLink]="['/call-details']">Call Details</a></li>
+                <li><a [routerLink]="['/view-plan']">View Plans</a></li>
+            </ul>
+            <button class="btn btn-primary navbar-btn navbar-right" [routerLink]="['/login']">Log Out</button>
+        </div>
+    </div>
+</nav>
+<div class="row" style="margin-top: 50px;">
+    <div class="col-sm-2"></div>
+    <div class="container col-sm-8">
+        <div class="col-sm-offset-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" align="center">
+                    <h3>Add Friends</h3>
+                </div>
+                <div class="panel-body">
+                    <form [formGroup]="addFriendForm">
+                        <div class="form-group">
+                            <label>Phone No:</label>
+                            <input type="text" class="form-control" formControlName="friendAndFamily">
+                            <div class="red"
+                                *ngIf="(addFriendForm.controls['friendAndFamily'].errors && (addFriendForm.controls['friendAndFamily'].dirty || addFriendForm.controls['friendAndFamily'].touched))">
+                                <div *ngIf="addFriendForm.controls.friendAndFamily.errors.required">Phone No is required
+                                </div>
+                                <div *ngIf="addFriendForm.controls.friendAndFamily.errors.pattern">Phone No should be
+                                    exactly 10 digits and starts with 7,8 or 9</div>
+                            </div>
+                        </div>
+                        <div class="red" *ngIf="errMsg" style="margin-left: 10px;">
+                            {{errMsg}}
+                            <br />
+                        </div><br>
+                        <input type="button" align="center" class="btn btn-primary btn-lg"
+                            [disabled]="!addFriendForm.valid || submit" (click)="addFriend()" value="Add">
+                    </form>
+                </div><br>
+                <div class="panel-body" *ngIf="successMsg" align="center">
+                    <div class="red">{{successMsg}}</div>
+                    <button class="btn btn-primary btn-lg" [routerLink]="['/home']">Back</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

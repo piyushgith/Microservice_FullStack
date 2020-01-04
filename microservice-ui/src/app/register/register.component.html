@@ -1,0 +1,88 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a class="navbar-brand" [routerLink]="['/login']">
+        <strong>Vodafone</strong></a>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="container col-sm-4">
+      <div class="panel panel-default"> 
+        <div class="panel-heading" align="center">
+          <h3>Register</h3>
+        </div>
+        <div class="panel-body" *ngIf="!submit">
+            <form [formGroup]="registerForm">
+                <div class="form-group">
+                  <label for="phoneNo">Phone No:</label>&nbsp;<span class="red">*</span>
+                  <input type="number" class="form-control" name="phoneNo" formControlName="phoneNo">
+                  <div *ngIf="(registerForm.controls['phoneNo'].errors && (registerForm.controls['phoneNo'].dirty || registerForm.controls['phoneNo'].touched))" class="red">
+                      <div *ngIf="registerForm.controls.phoneNo.errors.required">Phone No is required</div>
+                      <div *ngIf="registerForm.controls.phoneNo.errors.pattern">Phone No should begin with 7,8 or 9</div>
+                    </div>
+                </div>
+              <div class="form-group">
+                <label for="name">Name:</label>&nbsp;<span class="red">*</span>
+                <input type="text" class="form-control" name="name" formControlName="name">
+                <div *ngIf="(registerForm.controls['name'].errors && (registerForm.controls['name'].dirty || registerForm.controls['name'].touched))" class="red">
+                  Name is required
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password:</label>&nbsp;<span class="red">*</span>
+                  <input type="password" class="form-control" name="password" formControlName="password">
+                  <div *ngIf="(registerForm.controls['password'].errors && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched))" class="red">
+                    Password is required
+                  </div>
+                </div>
+              <div class="form-group">
+                <label for="age">Age:</label>&nbsp;<span class="red">*</span>
+                <input type="number" class="form-control" name="age" formControlName="age">
+                <div *ngIf="(registerForm.controls['age'].errors && (registerForm.controls['age'].dirty || registerForm.controls['age'].touched))" class="red">
+                  Age is required
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender:</label>&nbsp;<span class="red">*</span>
+                <input type="radio" name="gender" value="M" formControlName="gender">Male &nbsp;&nbsp;
+                <input type="radio" name="gender" value="F" formControlName="gender">Female
+                <div *ngIf="(registerForm.controls['gender'].errors && (registerForm.controls['gender'].dirty || registerForm.controls['gender'].touched))" class="red">
+                  Gender is required
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Address:</label>&nbsp;<span class="red">*</span>
+                <input type="text" class="form-control" name="address" formControlName="address">
+                <div *ngIf="(registerForm.controls['address'].errors && (registerForm.controls['address'].dirty || registerForm.controls['address'].touched))" class="red">
+                  Address is required
+                </div>
+              </div>
+              <div class="form-group">
+                <fieldset formGroupName="currentPlan">
+                    <label for="planId">Plan Id:</label>&nbsp;<span class="red">*</span>
+                    <select class="form-control" formControlName="planId">
+                      <option value="1">INFY_60</option>
+                      <option value="2">INFY_10</option>
+                      <option value="3">INFY_30</option>
+                    </select>
+                </fieldset>
+                <div *ngIf="(registerForm.controls['currentPlan'].errors && (registerForm.controls['currentPlan'].dirty || registerForm.controls['currentPlan'].touched))" class="red">
+                  Plan Id is required
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" style="margin:auto;display:block;" [disabled]="!registerForm.valid" (click)="register()">Register</button><br>
+              <button type="button" class="btn btn-primary" style="margin:auto;display:block;" [routerLink]="['/login']">Login</button>
+            </form>
+        </div>
+        <div class="panel-body" *ngIf="!submit">
+          <div class="red">{{errorMsg}}</div>
+        </div>
+        <div class="panel-body" *ngIf="submit">
+            <div class="red">{{successMsg}}</div>
+            <button type="button" class="btn btn-primary" style="margin:auto;display:block;" [routerLink]="['/login']">Login</button>
+          </div>
+      </div>
+    </div>
+  </div><br><br>

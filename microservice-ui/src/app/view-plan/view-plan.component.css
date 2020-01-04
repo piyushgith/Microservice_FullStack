@@ -1,0 +1,13 @@
+.red{
+    color: red;
+}
+table td {
+    border: 1px dotted black;
+}
+table th {
+    border: 1px dotted black;
+}
+
+td,th{
+    width: 137px;
+}

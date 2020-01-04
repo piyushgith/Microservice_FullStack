@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a class="navbar-brand" [routerLink]="['/login']">
+        <strong class="navbarHeader">Vodafone</strong></a>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="container col-sm-4">
+      <div class="panel panel-default"> 
+        <div class="panel-heading">
+          <h3>Login</h3>
+        </div>
+        <div class="panel-body">
+        <form [formGroup]="loginForm">
+          <div class="form-group">
+            <label for="phoneNo">Phone No:</label>&nbsp;<span class="red">*</span>
+            <input type="text" class="form-control" name="phoneNo" formControlName="phoneNo">
+            <div *ngIf="(loginForm.controls['phoneNo'].errors && (loginForm.controls['phoneNo'].dirty || loginForm.controls['phoneNo'].touched))" class="red">
+              <div *ngIf="loginForm.controls.phoneNo.errors.required">Phone No is required</div>
+              <div *ngIf="loginForm.controls.phoneNo.errors.pattern">Phone No should begin with 7,8 or 9</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>&nbsp;<span class="red">*</span>
+            <input type="password" class="form-control" name="password" formControlName="password">
+            <div *ngIf="(loginForm.controls['password'].errors && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched))" class="red">
+              Password is required
+            </div>
+          </div>
+          <div *ngIf="errorMsg"  class = "red">{{errorMsg}}<br></div><br>
+          <button type="button" class="btn btn-primary" id="submit" [routerLink]="['/home']" (click)="login()" [disabled]="!loginForm.valid">Login</button>
+          <button type="button" class="btn btn-primary pull-right" [routerLink]="['/register']">Register</button><br>
+        </form>
+      </div>
+      </div>
+     </div>
+     <div class="col-sm-4"></div>
+    </div>
+  
