@@ -1,0 +1,35 @@
+eureka:
+   client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+         defaultZone: http://localhost:2222/eureka/
+   instance:
+      hostname: localhost
+
+server:
+   port: 8200
+   
+spring:
+   application:
+      name: CUSTOMER-SERVICE
+   datasource:
+      username: root
+      password: piyush
+      url: jdbc:mysql://localhost:3306/infytel-customer?useSSL=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+   jpa:
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+         ddl-auto: create-drop
+      show-sql: true
+
+management:
+   endpoints:
+# create-drop create update
+      web:
+         exposure:
+            include:
+            - '*'
