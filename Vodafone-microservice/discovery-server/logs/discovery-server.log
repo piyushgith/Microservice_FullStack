@@ -287,3 +287,81 @@
 [2020-01-06T19:32:05.005Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(35)-127.0.0.1] [173] [INFO ] Destroying Spring FrameworkServlet 'dispatcherServlet'
 [2020-01-06T19:32:05.005Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(35)-127.0.0.1] [173] [INFO ] Stopping ProtocolHandler ["http-nio-2222"]
 [2020-01-06T19:32:05.005Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(35)-127.0.0.1] [173] [INFO ] Destroying ProtocolHandler ["http-nio-2222"]
+[2020-01-06T21:21:28.028Z] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2020-01-06T21:21:31.031Z] [org.springframework.boot.actuate.endpoint.EndpointId] [main] [155] [WARN ] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-01-06T21:21:31.031Z] [org.springframework.cloud.context.scope.GenericScope] [main] [295] [INFO ] BeanFactory id=b18fb753-3d6c-3d19-9251-733f776817ca
+[2020-01-06T21:21:32.032Z] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [92] [INFO ] Tomcat initialized with port(s): 2222 (http)
+[2020-01-06T21:21:32.032Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-2222"]
+[2020-01-06T21:21:32.032Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2020-01-06T21:21:32.032Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.29]
+[2020-01-06T21:21:32.032Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2020-01-06T21:21:32.032Z] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [284] [INFO ] Root WebApplicationContext: initialization completed in 4462 ms
+[2020-01-06T21:21:32.032Z] [com.netflix.config.sources.URLConfigurationSource] [main] [121] [WARN ] No URLs will be polled as dynamic configuration sources.
+[2020-01-06T21:21:32.032Z] [com.netflix.config.sources.URLConfigurationSource] [main] [122] [INFO ] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-01-06T21:21:33.033Z] [com.netflix.config.DynamicPropertyFactory] [main] [281] [INFO ] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4b3fe06e
+[2020-01-06T21:21:35.035Z] [com.sun.jersey.server.impl.application.WebApplicationImpl] [main] [815] [INFO ] Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[2020-01-06T21:21:35.035Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [70] [INFO ] Using JSON encoding codec LegacyJacksonJson
+[2020-01-06T21:21:35.035Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [71] [INFO ] Using JSON decoding codec LegacyJacksonJson
+[2020-01-06T21:21:36.036Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [80] [INFO ] Using XML encoding codec XStreamXml
+[2020-01-06T21:21:36.036Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [81] [INFO ] Using XML decoding codec XStreamXml
+[2020-01-06T21:21:36.036Z] [org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration] [main] [120] [WARN ] No spring.application.name found, defaulting to 'application'
+[2020-01-06T21:21:36.036Z] [com.netflix.config.sources.URLConfigurationSource] [main] [121] [WARN ] No URLs will be polled as dynamic configuration sources.
+[2020-01-06T21:21:36.036Z] [com.netflix.config.sources.URLConfigurationSource] [main] [122] [INFO ] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-01-06T21:21:37.037Z] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger] [main] [86] [WARN ] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.InstanceInfoFactory] [main] [72] [INFO ] Setting initial instance status as: STARTING
+[2020-01-06T21:21:40.040Z] [com.netflix.discovery.DiscoveryClient] [main] [365] [INFO ] Initializing Eureka in region us-east-1
+[2020-01-06T21:21:40.040Z] [com.netflix.discovery.DiscoveryClient] [main] [368] [INFO ] Client configured to neither register nor query for data.
+[2020-01-06T21:21:40.040Z] [com.netflix.discovery.DiscoveryClient] [main] [381] [INFO ] Discovery Client initialized at timestamp 1578325900268 with initial instances count: 0
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.DefaultEurekaServerContext] [main] [63] [INFO ] Initializing ...
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.cluster.PeerEurekaNodes] [main] [155] [WARN ] The replica size seems to be empty. Check the route 53 DNS Registry
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry] [main] [151] [INFO ] Finished initializing remote region registries. All known remote regions: []
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.DefaultEurekaServerContext] [main] [70] [INFO ] Initialized
+[2020-01-06T21:21:40.040Z] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [main] [58] [INFO ] Exposing 2 endpoint(s) beneath base path '/actuator'
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry] [main] [41] [INFO ] Registering application UNKNOWN with eureka with status UP
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap] [Thread-13] [110] [INFO ] Setting the eureka configuration..
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap] [Thread-13] [115] [INFO ] Eureka data center value eureka.datacenter is not set, defaulting to default
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap] [Thread-13] [129] [INFO ] Eureka environment value eureka.environment is not set, defaulting to test
+[2020-01-06T21:21:40.040Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-2222"]
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap] [Thread-13] [188] [INFO ] isAws returned false
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap] [Thread-13] [153] [INFO ] Initialized server context
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl] [Thread-13] [241] [INFO ] Got 1 instances from neighboring DS node
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl] [Thread-13] [242] [INFO ] Renew threshold is: 1
+[2020-01-06T21:21:40.040Z] [com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl] [Thread-13] [253] [INFO ] Changing status to UP
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration] [Thread-13] [72] [INFO ] Started Eureka Server
+[2020-01-06T21:21:40.040Z] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 2222 (http) with context path ''
+[2020-01-06T21:21:40.040Z] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration] [main] [145] [INFO ] Updating port to 2222
+[2020-01-06T21:21:42.042Z] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DiscoveryServerApplication in 17.206 seconds (JVM running for 19.293)
+[2020-01-06T21:22:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 0ms
+[2020-01-06T21:23:25.025Z] [org.apache.juli.logging.DirectJDKLog] [http-nio-2222-exec-9] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-01-06T21:23:25.025Z] [org.springframework.web.servlet.FrameworkServlet] [http-nio-2222-exec-9] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2020-01-06T21:23:25.025Z] [org.springframework.web.servlet.FrameworkServlet] [http-nio-2222-exec-9] [547] [INFO ] Completed initialization in 9 ms
+[2020-01-06T21:23:26.026Z] [com.netflix.eureka.registry.AbstractInstanceRegistry] [http-nio-2222-exec-10] [266] [INFO ] Registered instance CALLDETAIL-SERVICE/host.docker.internal:CALLDETAIL-SERVICE:8400 with status UP (replication=false)
+[2020-01-06T21:23:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 0ms
+[2020-01-06T21:24:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 6ms
+[2020-01-06T21:25:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 15ms
+[2020-01-06T21:26:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 6ms
+[2020-01-06T21:27:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 7ms
+[2020-01-06T21:28:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 12ms
+[2020-01-06T21:29:11.011Z] [com.netflix.eureka.registry.AbstractInstanceRegistry] [http-nio-2222-exec-2] [266] [INFO ] Registered instance CALLDETAIL-SERVICE/host.docker.internal:CALLDETAIL-SERVICE:8400 with status DOWN (replication=false)
+[2020-01-06T21:29:15.015Z] [com.netflix.eureka.registry.AbstractInstanceRegistry] [http-nio-2222-exec-4] [330] [INFO ] Cancelled instance CALLDETAIL-SERVICE/host.docker.internal:CALLDETAIL-SERVICE:8400 (replication=false)
+[2020-01-06T21:29:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 10ms
+[2020-01-06T21:30:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 0ms
+[2020-01-06T21:31:40.040Z] [com.netflix.eureka.cluster.PeerEurekaNodes] [Eureka-PeerNodesUpdater] [155] [WARN ] The replica size seems to be empty. Check the route 53 DNS Registry
+[2020-01-06T21:31:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 0ms
+[2020-01-06T21:32:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 14ms
+[2020-01-06T21:33:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 7ms
+[2020-01-06T21:34:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 0ms
+[2020-01-06T21:35:40.040Z] [com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask] [Eureka-EvictionTimer] [1250] [INFO ] Running the evict task with compensationTime 0ms
+[2020-01-06T21:35:43.043Z] [org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] [RMI TCP Connection(27)-127.0.0.1] [159] [INFO ] Application shutdown requested.
+[2020-01-06T21:35:43.043Z] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry] [RMI TCP Connection(27)-127.0.0.1] [65] [INFO ] Unregistering application UNKNOWN with eureka with status DOWN
+[2020-01-06T21:35:43.043Z] [com.netflix.eureka.DefaultEurekaServerContext] [RMI TCP Connection(27)-127.0.0.1] [76] [INFO ] Shutting down ...
+[2020-01-06T21:35:43.043Z] [com.netflix.eureka.DefaultEurekaServerContext] [RMI TCP Connection(27)-127.0.0.1] [79] [INFO ] Shut down
+[2020-01-06T21:35:43.043Z] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [RMI TCP Connection(27)-127.0.0.1] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-01-06T21:35:43.043Z] [com.netflix.discovery.DiscoveryClient] [RMI TCP Connection(27)-127.0.0.1] [906] [INFO ] Shutting down DiscoveryClient ...
+[2020-01-06T21:35:43.043Z] [com.netflix.discovery.DiscoveryClient] [RMI TCP Connection(27)-127.0.0.1] [929] [INFO ] Completed shut down of DiscoveryClient
+[2020-01-06T21:35:43.043Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(27)-127.0.0.1] [173] [INFO ] Pausing ProtocolHandler ["http-nio-2222"]
+[2020-01-06T21:35:43.043Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(27)-127.0.0.1] [173] [INFO ] Stopping service [Tomcat]
+[2020-01-06T21:35:43.043Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(27)-127.0.0.1] [173] [INFO ] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2020-01-06T21:35:43.043Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(27)-127.0.0.1] [173] [INFO ] Stopping ProtocolHandler ["http-nio-2222"]
+[2020-01-06T21:35:43.043Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(27)-127.0.0.1] [173] [INFO ] Destroying ProtocolHandler ["http-nio-2222"]

@@ -27,10 +27,19 @@ spring:
     show-sql: true      
 # create-drop create update
 
+# below comes under sprin.sleuth
+  sleuth:
+    enabled: true
+    sampler:
+      rate: 1
+  zipkin:
+    enabled: true
+    base-url: http://localhost:9411 
+    #http://${tracking-host:tracking}:9411 
 
 management:
   endpoints:
     web:
       exposure:
         include:
-        - "*"         
+        - "*"
