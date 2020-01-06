@@ -16,6 +16,7 @@ import com.microservice.example.calldetailsservice.dto.CallDetailsDTO;
 import com.microservice.example.calldetailsservice.service.CallDetailsService;
 
 @RestController
+@RequestMapping("calldetail-service")
 public class CallDetailsController {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 

@@ -17,6 +17,7 @@ import com.microservice.example.friendfamilyservice.dto.FriendFamilyDTO;
 import com.microservice.example.friendfamilyservice.service.FriendFamilyService;
 
 @RestController
+@RequestMapping("friendfamily-service")
 public class FriendFamilyController {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());

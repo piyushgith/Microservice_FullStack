@@ -13,19 +13,19 @@ eureka:  client: #   eureka-server-port: 2222
 
 
 zuul:
-  prefix: /api  routes:    simcard-service:
-      service-id: SIMCARD-SERVICE
-      path: /simcard-service/**
+  prefix: /api  routes:    calldetail-service:
+      service-id: CALLDETAIL-SERVICE
+      path: /calldetail-service/**
       strip-prefix: false
-    order-service:
-      service-id: ORDER-SERVICE
-      path: /order-service/**
+    friendfamily-service:
+      service-id: FRIENDFAMILIY-SERVICE
+      path: /friendfamily-service/**
       strip-prefix: false
     customer-service:
       service-id: CUSTOMER-SERVICE
       path: /customer-service/**
       strip-prefix: false    
-    useroffer-service:
-      service-id: USER-OFFER-SERVICE
-      path: /useroffer-service/**
+    plan-service:
+      service-id: PLAN-SERVICE
+      path: /plan-service/**
       strip-prefix: false  

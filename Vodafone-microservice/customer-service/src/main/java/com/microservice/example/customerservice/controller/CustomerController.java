@@ -30,6 +30,7 @@ import com.microservice.example.customerservice.dto.PlanDTO;
 import com.microservice.example.customerservice.service.CustomerService;
 
 @RestController
+@RequestMapping("customer-service")
 public class CustomerController {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
