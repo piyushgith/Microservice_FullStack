@@ -1,5 +1,6 @@
 package com.microservice.example.calldetailsservice.entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -23,7 +24,7 @@ public class CallDetails {
 	long calledTo;
 
 	@Column(nullable = false)
-	Date calledOn;
+	LocalDate calledOn;
 
 	@Column(nullable = false)
 	int duration;
@@ -57,11 +58,11 @@ public class CallDetails {
 		this.calledTo = calledTo;
 	}
 
-	public Date getCalledOn() {
+	public LocalDate getCalledOn() {
 		return calledOn;
 	}
 
-	public void setCalledOn(Date calledOn) {
+	public void setCalledOn(LocalDate calledOn) {
 		this.calledOn = calledOn;
 	}
 
@@ -73,7 +74,7 @@ public class CallDetails {
 		this.duration = duration;
 	}
 
-	public CallDetails(long id, long calledBy, long calledTo, Date calledOn, int duration) {
+	public CallDetails(long id, long calledBy, long calledTo, LocalDate calledOn, int duration) {
 		super();
 		this.id = id;
 		this.calledBy = calledBy;

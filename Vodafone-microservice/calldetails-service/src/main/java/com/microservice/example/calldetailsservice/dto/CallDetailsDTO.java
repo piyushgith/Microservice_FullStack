@@ -1,5 +1,6 @@
 package com.microservice.example.calldetailsservice.dto;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import com.microservice.example.calldetailsservice.entity.CallDetails;
@@ -9,7 +10,7 @@ public class CallDetailsDTO {
 
 	long calledTo;
 
-	Date calledOn;
+	LocalDate calledOn;
 
 	int duration;
 
@@ -17,7 +18,7 @@ public class CallDetailsDTO {
 		super();
 	}
 
-	public CallDetailsDTO(long calledBy, long calledTo, Date calledOn, int duration) {
+	public CallDetailsDTO(long calledBy, long calledTo, LocalDate calledOn, int duration) {
 		this();
 		this.calledBy = calledBy;
 		this.calledTo = calledTo;
@@ -41,11 +42,11 @@ public class CallDetailsDTO {
 		this.calledTo = calledTo;
 	}
 
-	public Date getCalledOn() {
+	public LocalDate getCalledOn() {
 		return calledOn;
 	}
 
-	public void setCalledOn(Date calledOn) {
+	public void setCalledOn(LocalDate calledOn) {
 		this.calledOn = calledOn;
 	}
 

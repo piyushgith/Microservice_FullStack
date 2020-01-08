@@ -24,6 +24,13 @@ public class FriendFamily {
 		super();
 	}
 
+	public FriendFamily(int id, long phoneNo, long friendAndFamily) {
+		super();
+		this.id = id;
+		this.phoneNo = phoneNo;
+		this.friendAndFamily = friendAndFamily;
+	}
+
 	public int getId() {
 		return id;
 	}
