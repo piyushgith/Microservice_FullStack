@@ -28,4 +28,6 @@ zuul:
     plan-service:
       service-id: PLAN-SERVICE
       path: /plan-service/**
-      strip-prefix: false  
+      strip-prefix: false
+      
+management:  endpoints:    web:      exposure:        include:        - '*'      

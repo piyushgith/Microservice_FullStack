@@ -28,7 +28,6 @@ spring:
 
 management:
    endpoints:
-# create-drop create update
       web:
          exposure:
             include:

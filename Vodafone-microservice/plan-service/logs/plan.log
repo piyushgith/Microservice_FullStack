@@ -268,3 +268,231 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 [2020-01-06T19:27:55.055Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(12)-127.0.0.1] [173] [INFO ] Destroying Spring FrameworkServlet 'dispatcherServlet'
 [2020-01-06T19:27:55.055Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(12)-127.0.0.1] [173] [INFO ] Stopping ProtocolHandler ["http-nio-8800"]
 [2020-01-06T19:27:55.055Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(12)-127.0.0.1] [173] [INFO ] Destroying ProtocolHandler ["http-nio-8800"]
+[2020-01-08T12:29:05.005Z] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2020-01-08T12:29:06.006Z] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2020-01-08T12:29:06.006Z] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+[2020-01-08T12:29:07.007Z] [org.springframework.boot.actuate.endpoint.EndpointId] [main] [155] [WARN ] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-01-08T12:29:07.007Z] [org.springframework.cloud.context.scope.GenericScope] [main] [295] [INFO ] BeanFactory id=9c54b0f2-21e3-38f6-894f-dc05a3182b9d
+[2020-01-08T12:29:08.008Z] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-08T12:29:08.008Z] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [92] [INFO ] Tomcat initialized with port(s): 8800 (http)
+[2020-01-08T12:29:08.008Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8800"]
+[2020-01-08T12:29:08.008Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2020-01-08T12:29:08.008Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.29]
+[2020-01-08T12:29:09.009Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2020-01-08T12:29:09.009Z] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [284] [INFO ] Root WebApplicationContext: initialization completed in 3529 ms
+[2020-01-08T12:29:09.009Z] [com.netflix.config.sources.URLConfigurationSource] [main] [121] [WARN ] No URLs will be polled as dynamic configuration sources.
+[2020-01-08T12:29:09.009Z] [com.netflix.config.sources.URLConfigurationSource] [main] [122] [INFO ] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-01-08T12:29:09.009Z] [com.netflix.config.DynamicPropertyFactory] [main] [281] [INFO ] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@991cbde
+[2020-01-08T12:29:12.012Z] [org.springframework.cloud.commons.util.InetUtils] [main] [170] [INFO ] Cannot determine local hostname
+[2020-01-08T12:29:13.013Z] [org.springframework.cloud.sleuth.zipkin2.ZipkinAutoConfiguration] [main] [114] [WARN ] Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@724bf25f}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+[2020-01-08T12:29:14.014Z] [org.hibernate.jpa.internal.util.LogHelper] [main] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-01-08T12:29:14.014Z] [org.hibernate.Version] [main] [46] [INFO ] HHH000412: Hibernate Core {5.4.9.Final}
+[2020-01-08T12:29:15.015Z] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [main] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-01-08T12:29:15.015Z] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2020-01-08T12:29:16.016Z] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2020-01-08T12:29:16.016Z] [org.hibernate.dialect.Dialect] [main] [172] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2020-01-08T12:29:21.021Z] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [main] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-01-08T12:29:21.021Z] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-01-08T12:29:22.022Z] [com.netflix.config.sources.URLConfigurationSource] [main] [121] [WARN ] No URLs will be polled as dynamic configuration sources.
+[2020-01-08T12:29:22.022Z] [com.netflix.config.sources.URLConfigurationSource] [main] [122] [INFO ] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-01-08T12:29:22.022Z] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-01-08T12:29:23.023Z] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2020-01-08T12:29:26.026Z] [org.springframework.cloud.commons.util.InetUtils] [main] [170] [INFO ] Cannot determine local hostname
+[2020-01-08T12:29:28.028Z] [org.springframework.cloud.commons.util.InetUtils] [main] [170] [INFO ] Cannot determine local hostname
+[2020-01-08T12:29:28.028Z] [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger] [main] [86] [WARN ] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[2020-01-08T12:29:29.029Z] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [main] [58] [INFO ] Exposing 18 endpoint(s) beneath base path '/actuator'
+[2020-01-08T12:29:29.029Z] [org.springframework.cloud.netflix.eureka.InstanceInfoFactory] [main] [72] [INFO ] Setting initial instance status as: STARTING
+[2020-01-08T12:29:30.030Z] [com.netflix.discovery.DiscoveryClient] [main] [365] [INFO ] Initializing Eureka in region us-east-1
+[2020-01-08T12:29:31.031Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [70] [INFO ] Using JSON encoding codec LegacyJacksonJson
+[2020-01-08T12:29:31.031Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [71] [INFO ] Using JSON decoding codec LegacyJacksonJson
+[2020-01-08T12:29:31.031Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [80] [INFO ] Using XML encoding codec XStreamXml
+[2020-01-08T12:29:31.031Z] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [81] [INFO ] Using XML decoding codec XStreamXml
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver] [main] [43] [INFO ] Resolving eureka endpoints via configuration
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [976] [INFO ] Disable delta property : false
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [977] [INFO ] Single vip registry refresh property : null
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [978] [INFO ] Force full registry fetch : false
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [979] [INFO ] Application is null : false
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [980] [INFO ] Registered Applications size is zero : true
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [982] [INFO ] Application version is -1: true
+[2020-01-08T12:29:32.032Z] [com.netflix.discovery.DiscoveryClient] [main] [1065] [INFO ] Getting all instance registry info from the eureka server
+[2020-01-08T12:29:33.033Z] [com.netflix.discovery.DiscoveryClient] [main] [1074] [INFO ] The response status is 200
+[2020-01-08T12:29:33.033Z] [com.netflix.discovery.DiscoveryClient] [main] [1288] [INFO ] Starting heartbeat executor: renew interval is: 30
+[2020-01-08T12:29:33.033Z] [com.netflix.discovery.InstanceInfoReplicator] [main] [60] [INFO ] InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2020-01-08T12:29:33.033Z] [com.netflix.discovery.DiscoveryClient] [main] [465] [INFO ] Discovery Client initialized at timestamp 1578466773777 with initial instances count: 4
+[2020-01-08T12:29:33.033Z] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry] [main] [41] [INFO ] Registering application PLAN-SERVICE with eureka with status UP
+[2020-01-08T12:29:33.033Z] [com.netflix.discovery.DiscoveryClient$3] [main] [1323] [INFO ] Saw local status change event StatusChangeEvent [timestamp=1578466773793, current=UP, previous=STARTING]
+[2020-01-08T12:29:33.033Z] [com.netflix.discovery.DiscoveryClient] [DiscoveryClient-InstanceInfoReplicator-0] [844] [INFO ] DiscoveryClient_PLAN-SERVICE/localhost:PLAN-SERVICE:8800: registering service...
+[2020-01-08T12:29:33.033Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8800"]
+[2020-01-08T12:29:34.034Z] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8800 (http) with context path ''
+[2020-01-08T12:29:34.034Z] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration] [main] [145] [INFO ] Updating port to 8800
+[2020-01-08T12:29:34.034Z] [com.netflix.discovery.DiscoveryClient] [DiscoveryClient-InstanceInfoReplicator-0] [853] [INFO ] DiscoveryClient_PLAN-SERVICE/localhost:PLAN-SERVICE:8800 - registration status: 204
+[2020-01-08T12:29:36.036Z] [org.apache.juli.logging.DirectJDKLog] [http-nio-8800-exec-1] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-01-08T12:29:36.036Z] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8800-exec-1] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2020-01-08T12:29:36.036Z] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8800-exec-1] [547] [INFO ] Completed initialization in 17 ms
+[2020-01-08T12:29:36.036Z] [org.springframework.cloud.commons.util.InetUtils] [main] [170] [INFO ] Cannot determine local hostname
+[2020-01-08T12:29:36.036Z] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started PlanServiceApplication in 35.577 seconds (JVM running for 37.285)
+[2020-01-08T12:34:32.032Z] [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver] [AsyncResolver-bootstrap-executor-0] [43] [INFO ] Resolving eureka endpoints via configuration
+[2020-01-08T12:35:59.059Z] [org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] [RMI TCP Connection(17)-127.0.0.1] [159] [INFO ] Application shutdown requested.
+[2020-01-08T12:35:59.059Z] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry] [RMI TCP Connection(17)-127.0.0.1] [65] [INFO ] Unregistering application PLAN-SERVICE with eureka with status DOWN
+[2020-01-08T12:35:59.059Z] [com.netflix.discovery.DiscoveryClient$3] [RMI TCP Connection(17)-127.0.0.1] [1321] [WARN ] Saw local status change event StatusChangeEvent [timestamp=1578467159176, current=DOWN, previous=UP]
+[2020-01-08T12:35:59.059Z] [com.netflix.discovery.DiscoveryClient] [DiscoveryClient-InstanceInfoReplicator-0] [844] [INFO ] DiscoveryClient_PLAN-SERVICE/localhost:PLAN-SERVICE:8800: registering service...
+[2020-01-08T12:35:59.059Z] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [RMI TCP Connection(17)-127.0.0.1] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-01-08T12:35:59.059Z] [com.netflix.discovery.DiscoveryClient] [DiscoveryClient-InstanceInfoReplicator-0] [853] [INFO ] DiscoveryClient_PLAN-SERVICE/localhost:PLAN-SERVICE:8800 - registration status: 204
+[2020-01-08T12:35:59.059Z] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [RMI TCP Connection(17)-127.0.0.1] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-01-08T12:35:59.059Z] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] [RMI TCP Connection(17)-127.0.0.1] [524] [INFO ] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2020-01-08T12:36:00.000Z] [zipkin2.reporter.AsyncReporter$BoundedAsyncReporter] [RMI TCP Connection(17)-127.0.0.1] [322] [WARN ] Timed out waiting for in-flight spans to send
+[2020-01-08T12:36:00.000Z] [zipkin2.reporter.AsyncReporter$BoundedAsyncReporter] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@724bf25f}] [296] [WARN ] Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+[2020-01-08T12:36:00.000Z] [com.netflix.discovery.DiscoveryClient] [RMI TCP Connection(17)-127.0.0.1] [906] [INFO ] Shutting down DiscoveryClient ...
+[2020-01-08T12:36:00.000Z] [zipkin2.reporter.AsyncReporter$BoundedAsyncReporter] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@724bf25f}] [303] [WARN ] Dropped 0 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751)
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644)
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129)
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142)
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132)
+	at zipkin2.Call$Base.execute(Call.java:380)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742)
+	... 9 common frames omitted
+[2020-01-08T12:36:01.001Z] [io.micrometer.core.util.internal.logging.WarnThenDebugLogger] [http-nio-8800-exec-8] [37] [WARN ] Failed to apply the value function for the gauge 'jdbc.connections.min'. Note that subsequent logs will be logged at debug level.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:359)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:356)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$c238367c.getMinimumIdle(<generated>)
+	at org.springframework.boot.jdbc.metadata.HikariDataSourcePoolMetadata.getMin(HikariDataSourcePoolMetadata.java:69)
+	at org.springframework.boot.actuate.metrics.jdbc.DataSourcePoolMetrics$CachingDataSourcePoolMetadataProvider.lambda$getValueFunction$0(DataSourcePoolMetrics.java:99)
+	at org.springframework.boot.actuate.metrics.jdbc.DataSourcePoolMetrics.lambda$bindDataSource$0(DataSourcePoolMetrics.java:84)
+	at io.micrometer.core.instrument.internal.DefaultGauge.value(DefaultGauge.java:54)
+	at io.micrometer.prometheus.PrometheusMeterRegistry.lambda$newGauge$3(PrometheusMeterRegistry.java:245)
+	at io.micrometer.prometheus.MicrometerCollector.collect(MicrometerCollector.java:69)
+	at io.prometheus.client.CollectorRegistry$MetricFamilySamplesEnumeration.findNextElement(CollectorRegistry.java:190)
+	at io.prometheus.client.CollectorRegistry$MetricFamilySamplesEnumeration.nextElement(CollectorRegistry.java:223)
+	at io.prometheus.client.CollectorRegistry$MetricFamilySamplesEnumeration.nextElement(CollectorRegistry.java:144)
+	at io.prometheus.client.exporter.common.TextFormat.write004(TextFormat.java:22)
+	at org.springframework.boot.actuate.metrics.export.prometheus.PrometheusScrapeEndpoint.scrape(PrometheusScrapeEndpoint.java:50)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82)
+	at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:138)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerPostProcessor.postProcessAfterInitialization(DataSourceInitializerPostProcessor.java:52)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 91 common frames omitted
+[2020-01-08T12:36:03.003Z] [com.netflix.discovery.DiscoveryClient] [RMI TCP Connection(17)-127.0.0.1] [940] [INFO ] Unregistering ...
+[2020-01-08T12:36:03.003Z] [com.netflix.discovery.DiscoveryClient] [RMI TCP Connection(17)-127.0.0.1] [942] [INFO ] DiscoveryClient_PLAN-SERVICE/localhost:PLAN-SERVICE:8800 - deregister  status: 200
+[2020-01-08T12:36:03.003Z] [com.netflix.discovery.DiscoveryClient] [RMI TCP Connection(17)-127.0.0.1] [929] [INFO ] Completed shut down of DiscoveryClient
+[2020-01-08T12:36:03.003Z] [com.zaxxer.hikari.HikariDataSource] [RMI TCP Connection(17)-127.0.0.1] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2020-01-08T12:36:03.003Z] [com.zaxxer.hikari.HikariDataSource] [RMI TCP Connection(17)-127.0.0.1] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2020-01-08T12:36:03.003Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(17)-127.0.0.1] [173] [INFO ] Pausing ProtocolHandler ["http-nio-8800"]
+[2020-01-08T12:36:03.003Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(17)-127.0.0.1] [173] [INFO ] Stopping service [Tomcat]
+[2020-01-08T12:36:03.003Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(17)-127.0.0.1] [173] [INFO ] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2020-01-08T12:36:03.003Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(17)-127.0.0.1] [173] [INFO ] Stopping ProtocolHandler ["http-nio-8800"]
+[2020-01-08T12:36:03.003Z] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(17)-127.0.0.1] [173] [INFO ] Destroying ProtocolHandler ["http-nio-8800"]
